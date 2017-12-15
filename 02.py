@@ -33,11 +33,11 @@ class TopStudent(Student):
         super(TopStudent,self).__init__(name,age,sex)
         self.top_id = top_id
      #重写父类方法
-     def set_sex(self,sex):
-         self.__sex = sex+1
-         print('重写父类的方法')
+    #  def set_sex(self,sex):
+    #      self.__sex = sex+1
+    #      print('重写父类的方法')
 
 #调用
-if __name__ = '__main__':
+if __name__ == '__main__':
     topStudent = TopStudent('Felix1',45,0,2048)
     print(topStudent.set_sex(1))
